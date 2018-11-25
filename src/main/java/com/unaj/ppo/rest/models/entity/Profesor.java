@@ -1,26 +1,31 @@
 package com.unaj.ppo.rest.models.entity;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
+@Entity
+@DiscriminatorValue( value="Profesor" )
 public class Profesor extends Usuario {
 
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
-    )
-    private List<Referencia> referencias = new ArrayList<>();
+    @Column(name = "social", length=200)
+    private String social;
+
+    @OneToOne(mappedBy="profesorTarifa")
+    private Tarifa profesorTarifa;
+
+    @OneToOne(mappedBy="profesorPuntuacion")
+    private Puntuacion profesorPuntuacion;
+
+    @OneToOne(mappedBy="profesorRepositorio")
+    private RepositorioProblema profesorRepositorio;
 
     public Profesor() {
-
     }
 
-    public List<Referencia> getReferencias() {
-        return referencias;
+    public String getSocial() {
+        return social;
     }
 
-    public void setReferencias(List<Referencia> referencias) {
-        this.referencias = referencias;
+    public void setSocial(String social) {
+        this.social = social;
     }
 }

@@ -1,11 +1,8 @@
 package com.unaj.ppo.rest.models.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="temas")
@@ -18,10 +15,12 @@ public class Tema {
 
     @Column(name="descripcion")
     private String descripcion;
+/*
+    @ManyToMany(mappedBy = "temas")
+    private Set<Materia> materias = new HashSet<>();
+*/
+    public Tema() { }
 
-    public Tema() {
-
-    }
 
     public Integer getId() {
         return id;
@@ -44,4 +43,11 @@ public class Tema {
         return "Descripcion [id=" + id + ", descripcion=" + descripcion+ "]";
     }
 
+/*    public Set<Materia> getMaterias() {
+        return materias;
+    }
+
+    public void setMaterias(Set<Materia> materias) {
+        this.materias = materias;
+    }*/
 }

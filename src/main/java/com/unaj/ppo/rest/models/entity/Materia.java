@@ -1,11 +1,8 @@
 package com.unaj.ppo.rest.models.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="materias")
@@ -19,9 +16,15 @@ public class Materia {
     @Column(name="descripcion")
     private String descripcion;
 
-    public Materia() {
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinTable(name = "materiastemas", joinColumns = @JoinColumn(name = "materiaid"), inverseJoinColumns = @JoinColumn(name = "temaid"))
+    private Set<Tema> temas = new HashSet<>();
 
-    }
+    @OneToOne
+    @PrimaryKeyJoinColumn
+    private RepositorioProblema materia;
+
+    public Materia() { }
 
     public Integer getId() {
         return id;
@@ -37,6 +40,14 @@ public class Materia {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public Set<Tema> getTemas() {
+        return temas;
+    }
+
+    public void setTemas(Set<Tema> temas) {
+        this.temas = temas;
     }
 
     @Override

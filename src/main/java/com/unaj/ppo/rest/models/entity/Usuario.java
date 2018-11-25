@@ -4,6 +4,8 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="usuarios")
+@Inheritance( strategy = InheritanceType.SINGLE_TABLE )
+@DiscriminatorColumn( name="tipousuario" )
 public class Usuario {
 
     @Id
@@ -33,11 +35,9 @@ public class Usuario {
     private String contraseña;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "tipousuario", nullable=false)
+    @Column(name = "tipousuario", nullable=false, insertable = false, updatable = false)
     private TipoUsuario tipoUsuario;
 
-    @Column(name = "social", length=200)
-    private String social;
 
     public Usuario() {
 
@@ -115,13 +115,6 @@ public class Usuario {
         this.tipoUsuario = tipoUsuario;
     }
 
-    public String getSocial() {
-        return social;
-    }
-
-    public void setSocial(String social) {
-        this.social = social;
-    }
 
     public enum TipoUsuario {
         Estudiante,

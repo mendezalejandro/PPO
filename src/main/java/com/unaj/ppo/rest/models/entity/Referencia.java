@@ -1,5 +1,6 @@
 package com.unaj.ppo.rest.models.entity;
 
+
 import javax.persistence.*;
 
 @Entity
@@ -13,7 +14,11 @@ public class Referencia {
 
     @Column(name="descripcion")
     private String descripcion;
-
+/*
+    @OneToOne
+    @JoinColumn(name="profesorid")
+    private Profesor profesorReferencia;
+*/
     public Referencia() {
 
     }
@@ -38,5 +43,12 @@ public class Referencia {
     public String toString() {
         return "Descripcion [id=" + id + ", descripcion=" + descripcion+ "]";
     }
+/*
+    public Profesor getProfesor() {
+        return profesorReferencia;
+    }
 
+    public void setProfesor(Profesor profesor) {
+        this.profesorReferencia = profesor;
+    }*/
 }
