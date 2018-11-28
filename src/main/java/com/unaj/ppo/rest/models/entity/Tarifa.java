@@ -3,6 +3,7 @@ package com.unaj.ppo.rest.models.entity;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.text.DecimalFormat;
 
 @Entity
 @Table(name="tarifas")
@@ -13,9 +14,12 @@ public class Tarifa {
     @Column(name = "id")
     private Integer id;
 
-    @OneToOne
-    @JoinColumn(name="profesorid")
-    private Profesor profesorTarifa;
+    @ManyToOne
+    @JoinColumn(name="profesorid", nullable=false)
+    private Profesor tarifaProfesor;
+
+    @Column(name = "tarifa", length=200)
+    private Double tarifa;
 
     @Column(name = "vigenciadesde", nullable=false)
     @Temporal(TemporalType.TIMESTAMP)
@@ -37,7 +41,7 @@ public class Tarifa {
     public void setId(Integer id) {
         this.id = id;
     }
-
+/*
     public Profesor getProfesor() {
         return profesorTarifa;
     }
@@ -45,7 +49,7 @@ public class Tarifa {
     public void setProfesor(Profesor profesor) {
         this.profesorTarifa = profesor;
     }
-
+*/
     public java.util.Date getVigenciadesde() {
         return vigenciadesde;
     }
@@ -60,5 +64,13 @@ public class Tarifa {
 
     public void setVigenciahasta(java.util.Date vigenciahasta) {
         this.vigenciahasta = vigenciahasta;
+    }
+
+    public Double getTarifa() {
+        return tarifa;
+    }
+
+    public void setTarifa(Double tarifa) {
+        this.tarifa = tarifa;
     }
 }

@@ -14,11 +14,11 @@ public class Referencia {
 
     @Column(name="descripcion")
     private String descripcion;
-/*
-    @OneToOne
-    @JoinColumn(name="profesorid")
-    private Profesor profesorReferencia;
-*/
+
+    @ManyToOne
+    @JoinColumn(name="profesorid", nullable=false)
+    private Profesor referenciaProfesor;
+
     public Referencia() {
 
     }

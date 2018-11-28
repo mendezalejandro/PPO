@@ -1,37 +1,20 @@
 package com.unaj.ppo.rest.models.entity;
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
-@Table(name="profesoresplanestudio")
+@Table(name="profesoresplanestudio",uniqueConstraints=@UniqueConstraint(columnNames= {"profesorid","materiatemaid"}))
 public class PlanEstudio {
+    @EmbeddedId
+    private
+    PlanEstudioKeys profesor_materiastemasid;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "profesorid")
-    private Integer profesorid;
+    public PlanEstudio() { }
 
-
-    @Column(name = "materiatemaid")
-    private Integer materiatemaid;
-
-    public PlanEstudio() {
-
+    public PlanEstudioKeys getProfesor_materiastemasid() {
+        return profesor_materiastemasid;
     }
 
-    public Integer getMateriatemaid() {
-        return materiatemaid;
-    }
-
-    public void setMateriatemaid(Integer materiatemaid) {
-        this.materiatemaid = materiatemaid;
-    }
-
-    public Integer getProfesorid() {
-        return profesorid;
-    }
-
-    public void setProfesorid(Integer profesorid) {
-        this.profesorid = profesorid;
+    public void setProfesor_materiastemasid(PlanEstudioKeys profesor_materiastemasid) {
+        this.profesor_materiastemasid = profesor_materiastemasid;
     }
 }

@@ -1,5 +1,5 @@
 package com.unaj.ppo.rest.models.entity;
-import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,13 +11,14 @@ public class Puntuacion {
     @Column(name = "id")
     private Integer id;
 
-    @OneToOne
-    @JoinColumn(name="profesorid")
-    private Profesor profesorPuntuacion;
+    @ManyToOne
+    @JoinColumn(name="profesorid", nullable=false)
+    private Profesor puntuacionProfesor;
 
-    @OneToOne
-    @JoinColumn(name="estudianteid")
-    private Estudiante estudiantePuntuacion;
+    @ManyToOne
+    @JoinColumn(name="estudianteid", nullable=false)
+    private Estudiante puntuacionEstudiante;
+
 
     @Column(name = "puntuacion", nullable=false)
     private Integer puntuacion;
@@ -54,19 +55,4 @@ public class Puntuacion {
         this.fecha = fecha;
     }
 
-    public Profesor getProfesor() {
-        return profesorPuntuacion;
-    }
-
-    public void setProfesor(Profesor profesor) {
-        this.profesorPuntuacion = profesor;
-    }
-
-    public Estudiante getEstudiante() {
-        return estudiantePuntuacion;
-    }
-
-    public void setEstudiante(Estudiante estudiante) {
-        this.estudiantePuntuacion = estudiante;
-    }
 }

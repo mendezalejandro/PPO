@@ -17,20 +17,19 @@ public class RepositorioProblema {
     @Cascade(value=org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private Materia materia;
 
-
     @Column(name = "problema", length = 200, nullable=false)
     private String problema;
 
     @Column(name = "solucion", length = 200, nullable=false)
     private String solucion;
 
-    @OneToOne
-    @JoinColumn(name="profesorid")
-    private Profesor profesorRepositorio;
+    @ManyToOne
+    @JoinColumn(name="profesorid", nullable=false)
+    private Profesor repositorioProfesor;
 
-    @OneToOne
-    @JoinColumn(name="estudianteid")
-    private Estudiante estudianteRepositorio;
+    @ManyToOne
+    @JoinColumn(name="estudianteid", nullable=false)
+    private Estudiante repositorioEstudiante;
 
 
     public RepositorioProblema() {
@@ -67,21 +66,5 @@ public class RepositorioProblema {
 
     public void setSolucion(String solucion) {
         this.solucion = solucion;
-    }
-
-    public Profesor getProfesor() {
-        return profesorRepositorio;
-    }
-
-    public void setProfesor(Profesor profesor) {
-        this.profesorRepositorio = profesor;
-    }
-
-    public Estudiante getEstudiante() {
-        return estudianteRepositorio;
-    }
-
-    public void setEstudiante(Estudiante estudiante) {
-        this.estudianteRepositorio = estudiante;
     }
 }
