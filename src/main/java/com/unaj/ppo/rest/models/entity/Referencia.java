@@ -43,12 +43,4 @@ public class Referencia {
     public String toString() {
         return "Descripcion [id=" + id + ", descripcion=" + descripcion+ "]";
     }
-/*
-    public Profesor getProfesor() {
-        return profesorReferencia;
-    }
-
-    public void setProfesor(Profesor profesor) {
-        this.profesorReferencia = profesor;
-    }*/
 }

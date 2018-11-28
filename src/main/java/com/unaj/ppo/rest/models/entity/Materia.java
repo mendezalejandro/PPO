@@ -24,6 +24,7 @@ public class Materia {
     @PrimaryKeyJoinColumn
     private RepositorioProblema materia;
 
+
     public Materia() { }
 
     public Integer getId() {

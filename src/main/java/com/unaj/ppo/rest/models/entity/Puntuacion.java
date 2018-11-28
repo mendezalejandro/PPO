@@ -12,18 +12,18 @@ public class Puntuacion {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name="profesorid", nullable=false)
+    @JoinColumn(name="profesorid")
     private Profesor puntuacionProfesor;
 
     @ManyToOne
-    @JoinColumn(name="estudianteid", nullable=false)
+    @JoinColumn(name="estudianteid")
     private Estudiante puntuacionEstudiante;
 
 
-    @Column(name = "puntuacion", nullable=false)
+    @Column(name = "puntuacion")
     private Integer puntuacion;
 
-    @Column(name = "fecha", nullable=false)
+    @Column(name = "fecha")
     @Temporal(TemporalType.TIMESTAMP)
     private java.util.Date fecha;
 

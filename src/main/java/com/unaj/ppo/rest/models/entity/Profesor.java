@@ -22,6 +22,9 @@ public class Profesor extends Usuario {
     @OneToMany(mappedBy="referenciaProfesor")
     private Set<Referencia> referencias;
 
+    @OneToMany(mappedBy="oferta")
+    private Set<Oferta> ofertas;
+
     public Profesor() {
     }
 
@@ -63,5 +66,13 @@ public class Profesor extends Usuario {
 
     public void setReferencias(Set<Referencia> referencias) {
         this.referencias = referencias;
+    }
+
+    public Set<Oferta> getOferta() {
+        return ofertas;
+    }
+
+    public void setOferta(Set<Oferta> oferta) {
+        this.ofertas = oferta;
     }
 }

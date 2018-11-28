@@ -21,6 +21,22 @@ public class ProfesorRestController {
         return profesorService.getProfesores();
     }
 
+    //obtiene una lista de profesores por materia y tema
+    @GetMapping("/profesores/materias/{materiaid}/temas/{temaid}")
+    public List<Profesor> getProfesoresByMateriaTema(@PathVariable int materiaid, @PathVariable int temaid ) {
+        return profesorService.getProfesoresByMateriaTema(materiaid,temaid);
+    }
+    //obtiene una lista de profesores por materia
+    @GetMapping("/profesores/materias/{materiaid}")
+    public List<Profesor> getProfesoresByMateria(@PathVariable int materiaid) {
+        return profesorService.getProfesoresByMateria(materiaid);
+    }
+    //obtiene una lista de profesores por tema
+    @GetMapping("/profesores/temas/{temaid}")
+    public List<Profesor> getProfesoresByTema(@PathVariable int temaid) {
+        return profesorService.getProfesoresByTema(temaid);
+    }
+
     //obtiene una profesor por su id
     @GetMapping("/profesores/{profesorId}")
     public Profesor getProfesor(@PathVariable int profesorId) {

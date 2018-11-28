@@ -8,4 +8,8 @@ public interface ProfesorService {
     public void saveProfesor(Profesor Profesor);
     public Profesor getProfesor(Integer id);
     public void deleteProfesor(Integer id);
+
+    public List<Profesor> getProfesoresByMateriaTema(Integer materiaid, Integer temaid);
+    public List<Profesor> getProfesoresByMateria(Integer materiaid);
+    public List<Profesor> getProfesoresByTema(Integer temaid);
 }
