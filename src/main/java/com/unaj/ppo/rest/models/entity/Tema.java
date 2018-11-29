@@ -42,12 +42,4 @@ public class Tema {
     public String toString() {
         return "Descripcion [id=" + id + ", descripcion=" + descripcion+ "]";
     }
-
-/*    public Set<Materia> getMaterias() {
-        return materias;
-    }
-
-    public void setMaterias(Set<Materia> materias) {
-        this.materias = materias;
-    }*/
 }

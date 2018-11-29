@@ -16,7 +16,7 @@ public class Referencia {
     private String descripcion;
 
     @ManyToOne
-    @JoinColumn(name="profesorid", nullable=false)
+    @JoinColumn(name="profesorid")
     private Profesor referenciaProfesor;
 
     public Referencia() {

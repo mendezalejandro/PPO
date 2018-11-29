@@ -15,7 +15,7 @@ public class Tarifa {
     private Integer id;
 
     @ManyToOne
-    @JoinColumn(name="profesorid", nullable=false)
+    @JoinColumn(name="profesorid")
     private Profesor tarifaProfesor;
 
     @Column(name = "tarifa", length=200)
@@ -41,15 +41,7 @@ public class Tarifa {
     public void setId(Integer id) {
         this.id = id;
     }
-/*
-    public Profesor getProfesor() {
-        return profesorTarifa;
-    }
 
-    public void setProfesor(Profesor profesor) {
-        this.profesorTarifa = profesor;
-    }
-*/
     public java.util.Date getVigenciadesde() {
         return vigenciadesde;
     }

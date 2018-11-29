@@ -24,11 +24,11 @@ public class RepositorioProblema {
     private String solucion;
 
     @ManyToOne
-    @JoinColumn(name="profesorid", nullable=false)
+    @JoinColumn(name="profesorid")
     private Profesor repositorioProfesor;
 
     @ManyToOne
-    @JoinColumn(name="estudianteid", nullable=false)
+    @JoinColumn(name="estudianteid")
     private Estudiante repositorioEstudiante;
 
 
