@@ -27,6 +27,12 @@ public class EstudianteRestController {
         return estudianteService.getEstudiante(estudianteId);
     }
 
+    //obtiene una estudiante por su id
+    @GetMapping("/estudiantes/profesores/{profesorid}")
+    public List<Estudiante> getEstudianteByProfesor(@PathVariable int profesorid) {
+        return estudianteService.getEstudiantesByProfesor(profesorid);
+    }
+
     //guarda una estudiante
     @PostMapping("/estudiantes")
     @ResponseStatus(HttpStatus.CREATED)

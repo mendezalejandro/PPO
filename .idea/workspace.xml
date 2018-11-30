@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="72a50560-f647-4059-8b39-ca8561bee568" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Referencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Referencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/RepositorioProblema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/RepositorioProblema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Tarifa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Tarifa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Tema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Tema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/EstudianteRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/EstudianteRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/EstudianteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/EstudianteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/EstudianteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/EstudianteServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +18,11 @@
     <session id="-1254169078">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="2" />
@@ -32,13 +32,13 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="13" />
-          <entry key="java" value="247" />
+          <entry key="java" value="264" />
           <entry key="properties" value="5" />
           <entry key="xml" value="4" />
         </counts>
@@ -46,7 +46,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="13" />
-          <entry key="JAVA" value="247" />
+          <entry key="JAVA" value="264" />
           <entry key="Properties" value="5" />
           <entry key="XML" value="4" />
         </counts>
@@ -54,13 +54,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="29" />
-          <entry key="java" value="5561" />
+          <entry key="java" value="5991" />
           <entry key="properties" value="399" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5561" />
+          <entry key="JAVA" value="5991" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="Properties" value="399" />
         </counts>
@@ -69,17 +69,138 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/RepositorioProblema.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/InscripcionRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="234">
+              <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
               <folding>
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#693#694#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Inscripcion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10">
+              <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding>
+                <element signature="e#740#741#0" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1038#1039#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+                <element signature="e#1150#1151#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1212#1213#0" expanded="true" />
+                <element signature="e#1256#1257#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
+                <element signature="e#1332#1333#0" expanded="true" />
+                <element signature="e#1367#1368#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
+                <element signature="e#1472#1473#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Estudiante.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/EstudianteRestController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/EstudianteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/EstudianteServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/ProfesorServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Profesor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#828#829#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="e#1348#1349#0" expanded="true" />
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1457#1458#0" expanded="true" />
+                <element signature="e#1505#1506#0" expanded="true" />
+                <element signature="e#1552#1553#0" expanded="true" />
+                <element signature="e#1586#1587#0" expanded="true" />
+                <element signature="e#1649#1650#0" expanded="true" />
+                <element signature="e#1695#1696#0" expanded="true" />
+                <element signature="e#1733#1734#0" expanded="true" />
+                <element signature="e#1763#1764#0" expanded="true" />
+                <element signature="e#1812#1813#0" expanded="true" />
+                <element signature="e#1849#1850#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Oferta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -108,13 +229,14 @@
       <find>referencias</find>
       <find>referencia</find>
       <find>puntuacion</find>
-      <find>profesor</find>
       <find>Profesor</find>
       <find>profesorPuntuacion</find>
       <find>puntuaciones</find>
       <find>materia</find>
       <find>PlanEstudio</find>
       <find>planEstudio</find>
+      <find>profesores</find>
+      <find>profesor</find>
     </findStrings>
     <replaceStrings>
       <replace>tema</replace>
@@ -138,6 +260,8 @@
       <replace>planEstudio</replace>
       <replace>Oferta</replace>
       <replace>oferta</replace>
+      <replace>Inscripcion</replace>
+      <replace>inscripcion</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Mis Documentos\GitHub\ppo</dir>
@@ -149,11 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/UsuarioServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Referencias.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/UsuarioServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/UsuarioService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/ReferenciaDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/PuntuacionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/ReferenciaService.java" />
@@ -169,8 +288,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/RepositorioProblemaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/RepositorioProblemaServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/EstudianteDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/EstudianteService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/EstudianteServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/PlanEstudioDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/PlanEstudioService.java" />
@@ -186,7 +303,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/ProfesorServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Materia.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Oferta.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/EstudianteRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/MateriaRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/ProfesorRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/PuntuacionRestController.java" />
@@ -196,14 +312,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/TemaRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/UsuarioRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Referencia.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Profesor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Tema.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Tarifa.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/RepositorioProblema.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/InscripcionesDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/InscripcionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/InscripcionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/InscripcionRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Profesor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Inscripcion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/EstudianteService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/EstudianteRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/EstudianteServiceImpl.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="26" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
@@ -290,7 +414,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rest" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ppo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ppo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="implementations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -307,11 +442,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.unaj.ppo.rest.models.entity" />
+      <recent name="com.unaj.ppo.rest.controllers" />
       <recent name="com.unaj.ppo.rest.models.service.implementations" />
       <recent name="com.unaj.ppo.rest.models.service" />
       <recent name="com.unaj.ppo.rest.models.dao" />
-      <recent name="com.unaj.ppo.rest.controllers" />
+      <recent name="com.unaj.ppo.rest.models.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,14 +498,14 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32223904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32753405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3442623" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3442623" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,41 +538,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="53" column="11" lean-forward="true" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/ReferenciaDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/PuntuacionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/ReferenciaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/ReferenciaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/PuntuacionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-96">
@@ -494,20 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/EstudianteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/EstudianteServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/PuntuacionService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -551,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/ProfesorServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/ProfesorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -576,16 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/EstudianteRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -680,24 +749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/UsuarioRestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Oferta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -708,13 +763,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Estudiante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -729,13 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Profesor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -756,13 +797,172 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/RepositorioProblema.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="e#887#888#0" expanded="true" />
             <element signature="e#912#913#0" expanded="true" />
             <element signature="e#949#950#0" expanded="true" />
             <element signature="e#977#978#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/dao/InscripcionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/InscripcionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/InscripcionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Oferta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/InscripcionRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+          <folding>
+            <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Profesor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1348#1349#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="e#1695#1696#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+            <element signature="e#1812#1813#0" expanded="true" />
+            <element signature="e#1849#1850#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/controllers/EstudianteRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Estudiante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/entity/Inscripcion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1472#1473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/EstudianteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/ProfesorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/unaj/ppo/rest/models/service/implementations/EstudianteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
         </state>
       </provider>
     </entry>
