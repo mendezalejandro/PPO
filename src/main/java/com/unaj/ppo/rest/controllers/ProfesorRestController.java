@@ -37,6 +37,12 @@ public class ProfesorRestController {
         return profesorService.getProfesoresByTema(temaid);
     }
 
+    //obtiene una lista de profesores por estudiante inscripto
+    @GetMapping("/profesores/estudiantes/{estudianteid}")
+    public List<Profesor> getProfesoresByEstudiante(@PathVariable int estudianteid) {
+        return profesorService.getProfesoresByEstudiante(estudianteid);
+    }
+
     //obtiene una profesor por su id
     @GetMapping("/profesores/{profesorId}")
     public Profesor getProfesor(@PathVariable int profesorId) {

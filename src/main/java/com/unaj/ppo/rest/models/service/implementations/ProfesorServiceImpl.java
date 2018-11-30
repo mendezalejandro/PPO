@@ -1,6 +1,7 @@
 package com.unaj.ppo.rest.models.service.implementations;
 
 import com.unaj.ppo.rest.models.dao.ProfesorDAO;
+import com.unaj.ppo.rest.models.entity.Estudiante;
 import com.unaj.ppo.rest.models.entity.Profesor;
 import com.unaj.ppo.rest.models.service.ProfesorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,6 +79,14 @@ public class ProfesorServiceImpl implements ProfesorService {
         Query query = entityManager.createNativeQuery(queryStr, Profesor.class);
 
         query.setParameter("temaid", temaid);
+        return query.getResultList();
+    }
+
+    @Transactional(readOnly=true)
+    public List<Profesor> getProfesoresByEstudiante(Integer estudianteid) {
+        String queryStr = "SELECT * FROM Usuarios WHERE tipousuario='Profesor' AND id IN (SELECT DISTINCT(profesorid) FROM inscripciones WHERE estudianteid = :estudianteid)";
+        Query query = entityManager.createNativeQuery(queryStr, Profesor.class);
+        query.setParameter("estudianteid",estudianteid);
         return query.getResultList();
     }
 }

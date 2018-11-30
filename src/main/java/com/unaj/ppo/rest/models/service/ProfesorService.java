@@ -12,4 +12,5 @@ public interface ProfesorService {
     public List<Profesor> getProfesoresByMateriaTema(Integer materiaid, Integer temaid);
     public List<Profesor> getProfesoresByMateria(Integer materiaid);
     public List<Profesor> getProfesoresByTema(Integer temaid);
+    public List<Profesor> getProfesoresByEstudiante(Integer estudianteid);
 }
